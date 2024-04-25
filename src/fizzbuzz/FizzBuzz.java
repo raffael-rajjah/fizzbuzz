@@ -14,6 +14,7 @@ public class FizzBuzz {
 			fb.append("buzz");
 		}
 		
+		
 		if (i % 3 != 0 && i % 5 != 0) {
 			fb.append(i);
 		}
