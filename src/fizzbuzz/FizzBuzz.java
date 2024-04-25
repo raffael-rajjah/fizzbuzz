@@ -3,16 +3,21 @@ package fizzbuzz;
 public class FizzBuzz {
 	
 	public static String fizzbuzz(int i) {
+		
+		StringBuilder fb = new StringBuilder();
+		
 		if(i % 3 == 0) {
-			return "fizz";
+			fb.append("fizz");
 		}
 		
-		else if (i % 5 == 0) {
-			return "buzz";
+		if (i % 5 == 0) {
+			fb.append("buzz");
 		}
 		
-		else {
-			return Integer.toString(i);
+		if (i % 3 != 0 && i % 5 != 0) {
+			fb.append(i);
 		}
+		
+		return fb.toString();
 	}
 }
